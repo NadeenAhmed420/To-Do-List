@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+.to-doApp {
+  width: 100%;
+  max-width: 540px;
+  background-color: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 60px;
+  border-radius: 10px;
+}
+.to-doApp h2 {
+  color: #4e085f;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.to-doApp h2 img {
+  margin-left: 10px;
+  width: 35px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  border-radius: 30px;
+}
+input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: #4e085f;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: -20px;
+}
+@media (max-width: 374px) {
+  button {
+    padding: 10px 20px;
+    margin-left: -60px;
+  }
+}
+ul li {
+  list-style: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 12px 8px 12px 40px;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/unchecked.png);
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 8px;
+}
+.checked {
+  color: #555;
+  text-decoration: line-through;
+  position: relative;
+}
+.checked::before {
+  background-image: none;
+  content: "\f00c";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  font-size: 12px;
+  width: 22px;
+  height: 22px;
+  background-color: #4e085f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #555;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 8px;
+  background-color: #4e085f;
+  color: #fff;
+  margin-right: 10px;
+}
